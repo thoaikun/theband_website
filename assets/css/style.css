@@ -314,7 +314,7 @@ html {
 #map {
     margin-top: 50px;
     padding-top: 45%;
-    background: url(/TheBand/assets/images/map.jpg) top center / cover no-repeat;
+    background: url(assets/images/map.jpg) top center / cover no-repeat;
 }
 
 #footer {
