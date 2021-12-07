@@ -1,0 +1,579 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/************************ Navigation bar ********************/
+#header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(10, 10, 10);
+}
+
+.bandName {
+    display: none;
+}
+
+#navigate, .subNav {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#navigate>li {
+    display: inline-block;
+}
+
+#navigate li {
+    position: relative;
+}
+
+#navigate li a{
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    padding: 0px 20px;
+    display: block;
+}
+
+#navigate .down-arrow {
+    font-size: 12px;
+}
+
+#navigate .subNav {
+    position: absolute;
+    background-color: black;
+    display: none;
+}
+
+#navigate .subNav li a {
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+#navigate>li:hover,
+#navigate .subNav li:hover {
+    background-color: gray;
+    color: black;
+}
+
+#navigate>li:hover .subNav {
+    display: block;
+}
+
+.search-button {
+    width: 25px;
+    padding: 15px 15px 15px 23px;
+    float: right;
+    box-sizing: content-box;
+    color: white;
+    cursor: pointer;
+}
+
+.moreOption {
+    display: none;
+}
+
+.search-button:hover {
+    background-color: rgba(238, 75, 75, 0.925);
+}
+
+/* ****************************************************** */
+
+/* ********************** Slider ********************* */
+
+#slider {
+    margin-top: 50px;
+    padding-top: 40%;
+    background: top center / cover no-repeat;
+}
+
+#slider .showInfo {
+    padding: 32px 16px;
+    text-align: center;
+    color: white
+}
+
+/* *************************************************** */
+
+/* *********************About us ********************* */
+#aboutUs {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#aboutUs .content-section {
+    padding: 40px 5px 30px 5px;
+}
+
+.sub-head-section {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight:500;
+}
+
+.sub-slogan {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+#aboutUs .content-section .sub-content-section {
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.memberTable {
+    width: 100%;
+    padding: 25px 0;
+}
+
+#aboutUs .memberTable .table-content {
+    text-align: center;
+    margin: auto;
+}
+
+#aboutUs .memberTable th {
+    padding: 10px 0px;
+    align-items: center;
+    font-weight: lighter;
+}
+
+#aboutUs .memberTable tbody tr img {
+    width: 65%;
+    margin-bottom: 15px;
+}
+
+/* *************************************************** */
+
+#date {
+    background-color: black;
+}
+
+#date .dates-section {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    padding: 40px 16px 60px 16px;
+    color: white;
+    box-sizing: border-box;
+}
+
+#date .dates-section .month-section {
+    margin: 60px 0 35px 0px;
+}
+
+#date .dates-section .tourMonth {
+    width: 100%;
+    background-color: white;
+    color: gray;
+    padding: 10px 8px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+#date .dates-section .soldout-tour {
+    color: white;
+    display: inline-block;
+    background-color: rgba(238, 75, 75, 0.925);
+    margin: 0px 10px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+}
+
+#date .dates-section .next-tour {
+    text-align: center;
+}
+
+#date .dates-section .next-tour-des {
+    display: inline-block;
+    width: 32.3%;
+    margin: 0px 2px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#date .dates-section img {
+    width: 100%;
+}
+
+
+#date .dates-section .next-tour-des .ticketInfor {
+    padding: 0px 15px;
+    text-align: left;
+}
+
+#date .dates-section .next-tour-des .ticketInfor p:nth-child(1) {
+    color: black;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+#date .dates-section .next-tour-des .ticketInfor p:nth-child(2) {
+    color: gray;
+    margin: 15px 0px;
+} 
+
+#date .dates-section .next-tour-des .ticketInfor p:nth-child(3) {
+    color: black;
+    font-weight: 350;
+    margin: 15px 0px;
+}
+
+#date .dates-section .next-tour-des .buy-ticket {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0px;
+    background-color: black;
+    color: white;
+}
+
+.button-hover:hover {
+    background-color: gray !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+/* ************************************************** */
+
+#contact {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    padding: 40px 16px 60px 16px;
+}
+
+#contact .contactInfo {
+    margin: 20px 0px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#contact .contactInfo p {
+    margin: 10px 0px;
+}
+
+#contact .contactInfo i {
+    margin-right: 20px;
+}
+
+#contact .sentEmail {
+    width: 360px;
+    margin: 0px 0px 0px 100px;
+    display: inline-block;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#contact .sentEmail input:last-child {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact .sentEmail input:nth-child(1),
+#contact .sentEmail input:nth-child(2) {
+    width: 47.3%;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact .sentEmail input:first-child {
+    margin-right: 13.5px;
+}
+
+#contact .sent-button {
+    padding: 10px 20px;
+    float: right;
+    margin-right: 2.5%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+/* ********************************************* */
+
+#map {
+    margin-top: 50px;
+    padding-top: 45%;
+    background: url(/TheBand/assets/images/map.jpg) top center / cover no-repeat;
+}
+
+#footer {
+    height: 210px;
+    padding: 60px 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#footer .contact-social {
+    margin: 30px 0px;
+}
+
+#footer .social-icon {
+    text-decoration: none;
+    font-size: 22px;
+    color: gray;
+    padding: 5px;
+}
+
+#footer .social-icon:hover {
+    color:rgb(10, 10, 10);
+}
+
+/* ************************************************* */
+
+
+@keyframes appear {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 200px;
+        opacity: 1;
+    }
+}
+
+.buy-ticket-box {
+    width: 100%;
+    height: 3400px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.active-buy-box {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.279);
+    z-index: 999;
+}
+
+.buy-ticket-box .buy-ticket-content {
+    width: 70%;
+    height: 450px;
+    position: fixed;
+    animation: appear;
+    animation-duration: 0.5s;
+    top: 200px;
+    left: 15%;
+}
+
+.buy-ticket-content .header-box {
+    padding: 25px;
+    font-size: 30px;
+    color: white;
+    background-color: #009688;
+    text-align: center;
+}
+
+.buy-ticket-content .input-buy-info {
+    background-color: white;
+    padding: 0px 15px;
+}
+.input-buy-info .quantity *,
+.input-buy-info .email-info *{
+    display: block;
+    width: 100%;
+}
+
+.input-block {
+    height: 40px;
+    padding: 10px;
+}
+
+.input-buy-info .pay-button {
+    margin: 20px 0px; 
+    width: 100%; 
+    height: 50px; 
+    border: none; 
+    background-color: #009688; 
+    color: white;
+    font-weight: 500;
+}
+
+.cancel-or-need-help .close-button {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(238, 75, 75, 0.925);
+    color: white;
+}
+
+.cancel-or-need-help span {
+    margin-left: 75%
+}
+
+
+
+
+/* Tablet responsive */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #aboutUs .content-section {
+        padding: 40px 15px 30px 15px;
+    }
+    #aboutUs .content-section .sub-content-section {
+        font-size: 15px;
+    }
+
+    #date .dates-section .next-tour-des {
+        width: 32.3%;
+    }
+    #date .month-section>div:nth-child(3)>div {
+        margin-left: 84% !important;
+    }
+
+    #contact .sentEmail {
+        margin-left: 80px;
+    }
+    #contact .sent-button {
+        margin-right: 10px;
+    }
+
+    .cancel-or-need-help span {
+        margin-left: 67%
+    }
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 46.1875em) {
+    .moreOption {
+        display: block;
+    }
+
+    .bandName {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        height: 50px;
+        color: white;
+        padding: 15px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: bold;
+    }
+
+    .openNav{
+        height: 250px !important;
+    }
+
+    .closeNav {
+        height: 50px !important;
+    }
+
+    .closeNav #navigate li{
+        display: none;
+    }
+
+    #header>div:last-child {
+        width: 50px;
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        padding: 12px 10px 5px 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #navigate {
+        width: 100%;
+    }
+
+    #navigate>li:first-child {
+        margin-top: 50px;
+    }
+    #navigate>li:last-child {
+        display: none !important;
+    }
+
+    .openNav>div:last-child {
+        background-color: gray;
+    }
+
+    .openNav #navigate li {
+        display: block;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    #slider {
+        padding-top: 50%;
+    }
+    #slider .showInfo {
+        display: none;
+    }
+
+    #aboutUs .content-section {
+        padding: 40px 15px 30px 15px;
+    }
+
+    #date .dates-section .next-tour-des {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #date .month-section>div:nth-child(3)>div {
+        margin-left: 65% !important;
+    }
+
+    #contact .sentEmail {
+        margin-left: 0;
+        width: 100%;
+    }
+    #contact .sentEmail input:nth-child(1),
+    #contact .sentEmail input:nth-child(2) {
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        margin-bottom: 5px;
+        padding: 10px;
+        font-size: 15px;
+    }  
+    #contact .sent-button {
+        margin-top: 10px;
+        margin-right: 0.4%;
+    }
+
+    @keyframes appear1 {
+        from {
+            top: 0;
+            opacity: 0;
+        }
+        to {
+            top: 100px;
+            opacity: 1;
+        }
+    }
+    .buy-ticket-box .buy-ticket-content {
+        top: 100px;
+        left: 0;
+        width: 100%;
+        animation: appear1;
+        animation-duration: 0.5s;
+    }
+    .cancel-or-need-help span {
+        margin-left: 50%
+    }
+}
