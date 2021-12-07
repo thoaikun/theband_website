@@ -8,19 +8,19 @@ function imageSlider() {
     solgan.innerHTML = "We had the best time playing at Venice Beach!"
     setInterval(function() {
         if (id === 0) {
-            sliderImage.style.backgroundImage = 'url(/TheBand/assets/images/la.jpg)'
+            sliderImage.style.backgroundImage = 'url(assets/images/la.jpg)'
             destination.innerHTML = "Los Angeles"
             solgan.innerHTML = "We had the best time playing at Venice Beach!"
             id = 1
         }
         else if (id === 1) {
-            sliderImage.style.backgroundImage = 'url(/TheBand/assets/images/ny.jpg)'
+            sliderImage.style.backgroundImage = 'url(assets/images/ny.jpg)'
             destination.innerHTML = "New York"
             solgan.innerHTML = "The atmosphere in New York is lorem ipsum."
             id = 2
         }
         else {
-            sliderImage.style.backgroundImage = 'url(/TheBand/assets/images/chicago.jpg)'
+            sliderImage.style.backgroundImage = 'url(assets/images/chicago.jpg)'
             destination.innerHTML = "Chicago"
             solgan.innerHTML = "Thank you, Chicago - A night we won't forget."
             id = 0
