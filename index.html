@@ -79,23 +79,18 @@
             </div>
 
             <div class="memberTable">
-                <table class="table-content">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Name</th>
-                            <th>Name</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        <tr>
-                            <th><img src="./assets/images/bandmember.jpg" alt=""></th>
-                            <th><img src="./assets/images/bandmember.jpg" alt=""></th>
-                            <th><img src="./assets/images/bandmember.jpg" alt=""></th>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="member-content">
+                    <span>Name</span>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </div>
+                <div class="member-content">
+                    <span>Name</span>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </div>
+                <div class="member-content">
+                    <span>Name</span>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </div>
             </div>
         </div>
 
@@ -160,19 +155,23 @@
                 <i>Fan? Drop a note!</i>
             </p>
             
-            <form>
-                <div class="contactInfo">
-                    <p><i class="ti-location-pin"></i> Chicago, US</p>
-                    <p><i class="ti-mobile"></i> Phone: +00 151515</p>
-                    <p><i class="ti-email"></i> Email: mail@mail.com5</p>
+            <form >
+                <div class="contact-form">
+                    <div class="contactInfo">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com5</p>
+                    </div>
+    
+                    <div class="sentEmail">
+                        <div class="text-mail-input">
+                            <input type="text" placeholder="Name" required id="name-input">
+                            <input type="email" placeholder="Email" required id="email-input">
+                        </div>
+                        <input type="text" placeholder="Message" required id="message-input">
+                    </div>
                 </div>
-
-                <div class="sentEmail">
-                    <input type="text" placeholder="Name" required id="name-input">
-                    <input type="email" placeholder="Email" required id="email-input">
-                    <input type="text" placeholder="Message" required id="message-input">
-                </div>
-
+                
                 <input type="submit" value="SEND" class="sent-button button-hover">
             </form>
         </div>

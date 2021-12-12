@@ -32,15 +32,8 @@ function navigateBar() {
     var menuButton = document.querySelector('#header>div:last-child')
     var navBar = document.getElementById('header')
     menuButton.addEventListener("click", function() {
-        var isClose = navBar.clientHeight === 50
-        if (isClose) {
-            navBar.classList.add('openNav')
-            navBar.classList.remove('closeNav')
-        }
-        else {
-            navBar.classList.add('closeNav')
-            navBar.classList.remove('openNav')
-        }
+        navBar.classList.toggle('closeNav')
+        navBar.classList.toggle('openNav')
     })
 
     var navigateList = document.querySelectorAll('#navigate>li')
@@ -56,7 +49,7 @@ function buyTicketBox() {
     var closebutton = document.querySelector(".cancel-or-need-help .close-button")
     closebutton.addEventListener('click', function() {
         document.querySelector('.buy-ticket-box').classList.remove('active-buy-box')
-    })
+    })  
 
     var buyTicketButtons = document.querySelectorAll('#date .buy-ticket')
     buyTicketButtons.forEach(button=> {
