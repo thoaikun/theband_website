@@ -357,7 +357,7 @@ html {
     width: 100%;
     height: 3400px;
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
@@ -370,13 +370,13 @@ html {
 }
 
 .buy-ticket-box .buy-ticket-content {
-    width: 70%;
+    width: 900px;
     height: 450px;
-    position: fixed;
+    position: relative;
     animation: appear;
     animation-duration: 0.5s;
     top: 200px;
-    left: 15%;
+    margin: auto;
 }
 
 .buy-ticket-content .header-box {
@@ -450,8 +450,8 @@ html {
         margin-right: 10px;
     }
 
-    .cancel-or-need-help span {
-        margin-left: 67%
+    .buy-ticket-box .buy-ticket-content {
+        width: 70%;
     }
 }
 
@@ -572,8 +572,5 @@ html {
         width: 100%;
         animation: appear1;
         animation-duration: 0.5s;
-    }
-    .cancel-or-need-help span {
-        margin-left: 50%
     }
 }
