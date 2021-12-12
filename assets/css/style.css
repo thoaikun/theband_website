@@ -421,7 +421,7 @@ html {
 }
 
 .cancel-or-need-help span {
-    margin-left: 75%
+    float: right;
 }
 
 
