@@ -64,6 +64,12 @@ function buyTicketBox() {
             document.querySelector('.buy-ticket-box').classList.add('active-buy-box')
         })
     })
+
+    let blurScreen = document.querySelector('.buy-ticket-box')
+    blurScreen.addEventListener('click', function(event) {
+        if (event.target.classList.value.startsWith('buy-ticket-box active-buy-box')) 
+            blurScreen.classList.remove('active-buy-box')
+    })
 }
 
 
